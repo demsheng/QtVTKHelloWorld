@@ -5,7 +5,7 @@
 - 功能：演示如何编译运行 `qt` 和 `vtk` 程序。
 - 支持 `window10` 和 `linux` 系统
 
-![预览] (showcase.png）
+![运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/showcase.png)
 
 ### 编译运行
 使用 `qtcreator` 打开 `QtVtkHelloWorld.pro` 编译运行
