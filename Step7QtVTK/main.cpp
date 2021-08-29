@@ -47,7 +47,7 @@ vtkSmartPointer<vtkGenericOpenGLRenderWindow> renWin;
 //主函数
 int main(int argc, char* argv[]) {
     std::cout << "Hello, World!" << std::endl;
-    QSurfaceFormat::setDefaultFormat(QVTKOpenGLWidget::defaultFormat());
+    //QSurfaceFormat::setDefaultFormat(QVTKOpenGLWidget::defaultFormat());
     return vtk_with_qt(argc, argv);
 }
 

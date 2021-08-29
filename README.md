@@ -2,21 +2,19 @@
 
 - 作者：李长圣
 - 邮箱：sheng0619@163.com
-- 功能：演示如何编译运行 `qt` 和 `vtk` 程序。
+- 功能：演示如何编译运行 `qt 5.12.9` 和 `vtk 8.2.0` 程序。
 - 支持 `window10` 和 `linux` 系统
 
-![运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/showcase.png)
-
 ### 编译运行
-使用 `qtcreator` 打开 `QtVtkHelloWorld.pro` 编译运行
+使用 `qtcreator` 打开 `./Step7QtVTK/QtVtkHelloWorld.pro` 编译运行
 
-### window10 安装 qt 和 vtk
+### window10 安装 qt5 和 vtk8
 
-1. http://download.qt.io/archive/qt 下载安装Qt。   
-本实例使用的版本 `Qt 5.12.9`
-2. https://vtk.org/download/下载 vtk  
-本实例使用的版本为 `VTK-8.2.0.zip` ，编译安装vtk 参考：https://sheng.geovbox.com/dem/vtk/。  
-    - `cmake` 编译器选择64位
+1.  下载安装Qt, http://download.qt.io/archive/qt/  
+    本实例使用的版本 `Qt 5.12.9`
+2. 下载vtk, https://vtk.org/download/  
+    本实例使用的版本为 `VTK-8.2.0.zip` ，编译安装vtk 参考：https://sheng.geovbox.com/dem/vtk/ 
+    - `cmake` 编译器选择64位，版本 `cmake-3.8.0-rc2-win64-x64.msi`
     - 编译目录
         1. VTK-8.2.0-src `源码`
         2. VTK-8.2.0-build `构建目录`
@@ -29,4 +27,45 @@
 3. 配置 `QtVtkHelloWorld.pro`，见源码。
 4. 打开 `qtcreator` 编译运行项目 `QtVtkHelloWorld.pro` 。
 
-**注意：** qtcreator 中一定要选择 Desktop_Qt_5_12_9_MSVC2017_64bit 编译器， `Release` 版本。否则，会出不明原因错误。 
+### 错误处理
+
+1. qtcreator 中一定要选择 Desktop_Qt_5_12_9_MSVC2017_64bit 编译器， `Release` 版本。否则，可能出现不明原因错误。
+2. cmd中运行程序提示 `no override found for vtkPolyDataMapper之类的错误`，在源码开头加入
+    ```
+    #include "vtkAutoInit.h"
+    VTK_MODULE_INIT(vtkRenderingOpenGL2); // VTK was built with vtkRenderingOpenGL2
+    VTK_MODULE_INIT(vtkInteractionStyle);
+    ```
+3. 将vtk安装目录的bin目录 `G:\bin\vtk\VTK-8.2.0-Install-VS2017-x64-Release\bin` 加入 `PATH`，否则exe可能找不到dll
+
+### VTK-8.2.0-src\Examples\Tutorial
+
+These examples demonstrate some basic VTK concepts. They are organized in
+increasing order of complexity. These examples are described in more detail
+in the textbook "The Visualization Toolkit An Object-Oriented Approach to 3D
+Graphics" Third Edition available for purchase from Kitware. The examples are
+implemented in the programming languages C++, Python, and Java. (Note:
+in order to use Python, and/or Java, you will need to compile with
+wrapping on.)
+
+1. 绘制图形
+    * Step1 - A "Hello World" style example of a simple visualization pipeline
+    * Step2 - Adding observers to Step1 (i.e., processing events)
+    * Step3 - Rendering with multiple renderers
+    * Step4 - Modifying properties and transformations
+2. 旋转移动
+    * Step5 - Specifying a particular interaction style
+    * Step6 - Adding a 3D widget
+    ```
+    Once you finish this mini-tutorial, you may wish to explore the other
+    VTK/Examples/ subdirectories. In particular, the VTK/Examples/Rendering
+    and VTK/Examples/VisualizationAlgorithms are worth exploring. The
+    subdirectory VTK/Examples/GUI has other 3D widget examples.
+    ```
+3. qt 中嵌入 vtk  
+    * Step7QtVTK  
+    ![运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/showcase.png)
+
+
+
+
