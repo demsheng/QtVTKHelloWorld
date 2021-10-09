@@ -75,21 +75,21 @@ wrapping on.)
     ```
 3. qt 中嵌入 vtk  
     - Step7QtVTK  
-    ![Step7QtVTK运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/showcase.png)
+    ![Step7QtVTK运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/showcase.png)
     - Step1-Step6
         * Step1  
-        ![Step1运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step1Cone/Step1.PNG)
+        ![Step1运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step1Cone/Step1.PNG)
         * Step2 同Step1
         * Step3  
-        ![Step3运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step3/Step3.PNG)
+        ![Step3运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step3/Step3.PNG)
         * Step4
-        ![Step4运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step4/Step4.PNG)
+        ![Step4运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step4/Step4.PNG)
         * Step5
-        ![Step5运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step5/Step5.PNG)
+        ![Step5运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step5/Step5.png)
         * Step6
-        ![Step6运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step6/Step6.PNG)
+        ![Step6运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step6/Step6.PNG)
     - Step8
-    ![Step8运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/blob/main/Step8/Step8.PNG)
+    ![Step8运行效果图](https://git.nju.edu.cn/demsheng/QtVTKHelloWorld/-/raw/main/Step8/Step8.PNG)
 
 
 
