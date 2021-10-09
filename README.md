@@ -8,6 +8,17 @@
 ### 编译运行
 使用 `qtcreator` 打开 `./Step7QtVTK/QtVtkHelloWorld.pro` 编译运行
 
+### 示例介绍
+- `Step1 - Step6` 为vtk官方示例，添加 `.pro`, 实现用`qtcreator` 编译
+    - `Step1` 一个旋转360°的锥体
+    - `Step2` 一个旋转360°的锥体，使用observer输出相机信息
+    - `Step3` 在一个窗口中显示两个个渲染器
+    - `Step4` 创建两个actors并旋转它们
+    - `Step5` 用鼠标控制物体旋转、放大缩小
+    - `Step6` 用鼠标修改物体形状
+- `Step7QtVTK` 在 Qt 窗口中创建显示vtk的三维对象
+- `Step8` 修改三维球体的大小、颜色
+
 ### window10 安装 qt5 和 vtk8
 
 1.  下载安装Qt, http://download.qt.io/archive/qt/  
@@ -63,9 +74,22 @@ wrapping on.)
     subdirectory VTK/Examples/GUI has other 3D widget examples.
     ```
 3. qt 中嵌入 vtk  
-    * Step7QtVTK  
-    ![运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/showcase.png)
-
+    - Step7QtVTK  
+    ![Step7QtVTK运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/showcase.png)
+    - Step1-Step6
+        * Step1  
+        ![Step1运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step1Cone/Step1.PNG)
+        * Step2 同Step1
+        * Step3  
+        ![Step3运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step3/Step3.PNG)
+        * Step4
+        ![Step4运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step4/Step4.PNG)
+        * Step5
+        ![Step5运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step5/Step5.PNG)
+        * Step6
+        ![Step6运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step6/Step6.PNG)
+    - Step8
+    ![Step8运行效果图](https://github.com/demsheng/QtVTKHelloWorld/blob/main/Step8/Step8.PNG)
 
 
 

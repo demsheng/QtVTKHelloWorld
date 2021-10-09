@@ -10,12 +10,12 @@ QT       += core gui
 
 QT += widgets
 
-TARGET = vtkqt5
+TARGET = Sphere8
 TEMPLATE = app
 
 
 SOURCES += \
-    main.cpp
+    Sphere8.cxx
 
 unix:INCLUDEPATH += $$quote(/usr/local/include/vtk-8.2)
 unix:LIBS += $$quote(/usr/local/lib/*.so)
@@ -24,9 +24,10 @@ unix:LIBS += $$quote(/usr/local/lib/*.so)
     win32 {
     MYVTK_PATH = "G:\bin\vtk\VTK-8.2.0-Install-VS2017-x64-Release"
     INCLUDEPATH += $$quote($$MYVTK_PATH\include\vtk-8.2)
-    #LIBS += $$quote(D:\vtk_complie1\VTK-8.2.0-Install-VS2017-x64-Release\lib\*.lib)
-    # 定义变量
     MYVTK_LIB_PATH = $$quote($$MYVTK_PATH\lib)
+
+    INCLUDEPATH += $$quote(G:\bin\vtk\VTK-8.2.0-Install-VS2017-x64-Release\include\vtk-8.2)
+    #LIBS += $$quote(D:\vtk_complie1\VTK-8.2.0-Install-VS2017-x64-Release\lib\*.lib)
 
     #win32:LIBS += $$quote($${MYVTK_LIB_PATH}\vtkalglib-8.2.lib)
     win32:LIBS += $$quote($${MYVTK_LIB_PATH}\vtkChartsCore-8.2.lib)

@@ -10,7 +10,7 @@ QT       += core gui
 
 QT += widgets
 
-TARGET = Cone3
+TARGET = Cone4
 TEMPLATE = app
 
 
